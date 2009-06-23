@@ -1,0 +1,29 @@
+@charset "UTF-8";
+#footer_wrapper{
+  clear: both;
+  border-top: 10px solid #A1FF00;
+  background-color: #231825;
+  color: #fff;
+  font-size: 90%;
+}
+#footer{
+  margin: 10px;
+}
+#footer li{
+  margin-left: 5px;
+}
+#footer a{
+    color: #ccc;
+}
+#footer a:hover{
+    text-decoration: underline;
+}
+#copyright{
+    float: left;
+}
+#footer ul{
+    float: right;
+}
+#footer ul li{
+    display: inline;
+}

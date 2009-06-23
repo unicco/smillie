@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@import "initialize.css";
+@import "common.css";
+@import "header.css";
+@import "footer.css";
+@import "main.css";
+@import "sub.css";
+@import "textstyle.css";
+
+/* blog 特有 */
+.postmetadata{text-align: right;margin-right:20px;}
+.commentmetadata{display:block;width: 100%;border-bottom: 1px dotted #888;padding-bottom:2px;}
+ol.commentlist,
+#commentform{
+  margin: 30px 40px 30px 55px;
+}
+ol.commentlist li{
+margin-bottom: 30px;
+}
+.entry{
+  margin: 30px 40px;
+}
+textarea{width: 700px;}
+cite{font-style:normal;font-weight:bold}
+h2 a:link,
+h2 a:hover,
+h2 a:visited{color:#FFF;}
+.commentlist p{clear:both;}
+.navigation{text-align:center;width: 500px;margin: 10px auto;}
+.alignleft{margin-bottom:10px;width: 230px;text-align:right;float:left;}
+.alignright{margin-bottom:10px;width:250px;text-align:left;float:right;}
+.post{clear:both;}
+#trackback_input{margin: 20px 20px 20px 55px;}
+#trackback_input input{width:700px;}
+
+#sidebar{width: 750px; margin: 20px auto;}
+#sidebar li.list{width: 185px; float:left}
+
+.list ul li{
+  background:url(/images/arrow.png) 0 2px no-repeat;
+  padding-left: 15px;
+  margin-bottom: 5px;
+}
+.list ul li li{
+  background-image: none;
+  margin-bottom: 2px;
+}

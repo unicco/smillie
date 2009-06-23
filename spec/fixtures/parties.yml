@@ -1,0 +1,32 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+# one:
+#   column: value
+#
+# two:
+#   column: value
+
+marriage:
+  title: てすと
+  key: marriage
+  held_on: <%= Date.today %>
+
+old_party:
+  title: Old Party
+  key: old
+  held_on: 2007-01-01
+
+week_ago:
+  title: Old Party
+  key: old2
+  held_on: <%= Date.today - 7 %>
+  
+day_before_week_ago:
+  title: Old Party
+  key: old3
+  held_on: <%= Date.today - 8 %>
+  
+demo:
+  title: Demo
+  key: demo
+  held_on: 2007-01-01

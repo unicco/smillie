@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!DOCTYPE html PUBLIC" -//i-mode group (ja)//DTD XHTML i-XHTML(Locale/Ver.=ja/2.1) 1.0//EN"" i-xhtml_4ja_10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=Shift_JIS" />
+<title><%=h @title && "#{@title} - " %>smillie!</title>
+<body style="color:#888888;background-color:#FFFFFF">
+<% if params[:controller] == "home" %>
+<div style="text-align:center"><img src="/images/logo.jpg" /></div>
+<% else %>
+  <div style="text-align:center;font-size:medium;color:#FFFFFF;background-color:#C9F2BA;">
+  <hr style="border-style:solid;border-color:#007D08;background-color:#007D08;height:3;" color="#007D08" size="4"/>
+  <span style="background-color:#007D08;">
+  <%= @title ? @title : (@party ? h(@party.title) : "Smillie!") %>
+  </span>
+  <hr style="border-style:solid;border-color:#007D08;background-color:#007D08;height:3;" color="#007D08" size="4"/>
+  </div>
+<% end %>
+<div style="font-size:x-small;">
+<%= yield %>
+</div>
+<hr color="#888888" />
+<div style="font-size:x-small;">
+&#xE684;<%= link_to "HOME", :controller=>"home" %>　　
+&#xE690;<%= link_to "Smillieとは", :action=>"about", :controller=>"home" %><br />
+&#xE6F0;<%= link_to "新規登録", :action=>"new", :controller=>"parties" %>
+&#xE6D3;<a href="mailto:?body=http://smillie.jp/">友達に教える</a>
+</div>
+<div style="text-align:center;background-color:#999999;color:#FFFFFF;font-size:x-small;">
+copyright (C)tinymonks, all rights reserved.
+</div>
+</body>
+</html>

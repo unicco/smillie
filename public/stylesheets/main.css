@@ -1,0 +1,67 @@
+@charset "UTF-8";
+#main{
+  float: left;
+  margin-top: 20px;
+  width :575px;
+}
+#main_content_1{
+  background:url(/images/smillie_jpg.jpg) 0 0 no-repeat;
+  width :575px;
+  height: 207px;
+}
+#main_content_1 ul{
+  padding: 90px 100px 0 38px;
+  font-size: 80%;
+}
+#main_content_2{
+  margin-top: 15px;
+  width :575px;
+}
+#main_content_2 h3{
+  background:url(/images/smillie_png.png) 0 -80px no-repeat;
+  height: 30px;
+}
+#main_content_2 h3 span{
+  display: none;
+}
+ul#step{
+  margin-top: 15px;
+}
+ul#step span{
+  display: none;
+}
+ul#step li{
+  float: left;
+}
+ul #step1{
+  background:url(/images/smillie_png.png) 0 -115px no-repeat;
+  height: 150px;
+  width: 175px;
+}
+ul #step2{
+  background:url(/images/smillie_png.png) -175px -115px no-repeat;
+  height: 150px;
+  width: 175px;
+}
+ul #step3{
+  background:url(/images/smillie_png.png) -350px -115px no-repeat;
+  height: 150px;
+  width: 195px;
+}
+#main h2,
+h3 span{
+  display: none;
+}
+#main_content_1 a{
+  display: block;
+  margin: 0 0 0 32px;
+  background:url(/images/smillie_png.png) -710px 0 no-repeat;
+  height: 30px;
+  width: 140px;
+}
+.submit{
+  text-align:center;
+  margin:20px;
+}
+.back{text-align:center;}
+p.body{margin: 40px 20px; }

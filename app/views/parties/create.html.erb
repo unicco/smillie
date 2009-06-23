@@ -1,0 +1,6 @@
+<% @title ="スライドショー作成の完了" %>
+<% @description ="おめでとうございます！スライドショーを作成しました。" %>
+<div class="alert"><p>管理画面の URL は http://smillie.jp/<%=h @party.key %>/info、メール投稿先は <%=h @party.mail_addr %> になります。クリックした先のページを忘れずにブックマークしてください。</p></div>
+<div class="btn create">
+<%= link_to "<span>管理ページへ</span>", :action=>"info", :party_key => @party.key %>
+</div>

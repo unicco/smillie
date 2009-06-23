@@ -1,0 +1,58 @@
+Return-Path: <kasatani@gmail.com>
+Received: by 10.141.99.1 with HTTP; Mon, 31 Mar 2008 20:16:41 -0700 (PDT)
+Message-ID: <eb7e6ffd0803312016l60ffe5dem56af3b742255c79b@mail.gmail.com>
+Date: Tue, 1 Apr 2008 12:16:41 +0900
+From: "Shinya Kasatani" <kasatani@gmail.com>
+To: kasatani@gmail.com
+Subject: test
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_6118_29134395.1207019801756"
+Delivered-To: kasatani@gmail.com
+
+------=_Part_6118_29134395.1207019801756
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+test
+
+------=_Part_6118_29134395.1207019801756
+Content-Type: image/png; name=rails.png
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_fehwewy10
+Content-Disposition: attachment; filename=rails.png
+
+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
+Dd4StjMb1WUAAAAASUVORK5CYII=
+------=_Part_6118_29134395.1207019801756--

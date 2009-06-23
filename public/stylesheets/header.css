@@ -1,0 +1,72 @@
+@charset "UTF-8";
+#wrapper{
+  margin: 0 auto;
+}
+#header {
+  margin: 0;
+  padding:0;
+}
+#global_menu span {
+  display:none;
+}
+#global_menu{
+  float : right;
+  border-top: 10px solid #A1FF00;
+  padding-top: 50px;
+}
+#global_menu li{
+  display:block;
+  float:left;
+}
+#global_menu li#global_home a{
+  background:url(/images/smillie_png.png) -300px -34px no-repeat;
+  width: 70px;
+  height: 24px;
+}
+#global_menu li#global_home a:hover {
+   background-position:-300px -10px!important;
+}
+#global_menu li#global_howto a{
+  background:url(/images/smillie_png.png) -370px -35px no-repeat;
+  width: 60px;
+  height: 24px;
+}
+#global_menu li#global_howto a:hover {
+   background-position:-370px -10px!important;
+}
+#global_menu li#global_casestudy a{
+  background:url(/images/smillie_png.png) -430px -36px no-repeat;
+  width: 90px;
+  height: 24px;
+}
+#global_menu li#global_casestudy a:hover {
+   background-position:-430px -10px!important;
+}
+#global_menu li#global_demo a{
+  background:url(/images/smillie_png.png) -520px -36px no-repeat;
+  width: 50px;
+  height: 24px;
+}
+#global_menu li#global_demo a:hover {
+   background-position:-520px -10px!important;
+}
+#global_menu li#global_signup a{
+  background:url(/images/smillie_png.png) -570px -36px no-repeat;
+  width: 140px;
+  height: 24px;
+}
+#global_menu li#global_signup a:hover {
+   background-position:-570px -10px!important;
+}
+
+#global_menu a {
+  display:block;
+}
+#logo a{
+    background:url(/images/smillie_png.png) 0 0 no-repeat;
+    width: 295px;
+    height: 70px;
+    margin-top: 15px;
+    display: block;
+    float :left;
+}

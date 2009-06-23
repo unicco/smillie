@@ -1,0 +1,23 @@
+<% @title = "#{@party.title}" %>
+<div class="list_photo">
+  <% form_tag({:id => @photo.id, :action => "update"}, :method => :put) do %>
+  <div>
+    <%= tag :img, :src => edit_thumbnail_photo_path(:id => @photo.id, :rotate => @rotate) %>
+  </div>
+  <div>
+    <%= link_to "[元のサイズで画像を表示]", @photo.location %>
+  </div>
+  <div>
+    <%= link_to "[左に回転]", edit_photo_path(:id => @photo.id, :rotate => @left_rotate) %>
+    <%= link_to "[右に回転]", edit_photo_path(:id => @photo.id, :rotate => @right_rotate) %>
+  </div>
+  <div>
+    <%= hidden_field_tag "rotate", @rotate %>
+    <%= submit_tag "確定" %>
+  </div>
+  <% end %>
+</div>
+
+<div>
+  <%= link_to "一覧に戻る", photos_path %>
+</div>

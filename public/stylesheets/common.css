@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* 共通部分 */
+#wrapper{
+  background-color :#FFF;
+}
+#header_wrapper{
+    width: 785px;
+    margin: 0 auto;
+    position: relative;
+}
+#contents_wrapper{
+  width: 810px;
+  margin: 0 auto;
+  position: relative;
+}
+.clear{
+    display: block;
+    clear: both;
+}
+
+/* 共通パーツ：エラー */
+#errorExplanation,
+div.error{
+  margin:20px 0;
+}
+#errorExplanation{
+  background-color: #FF5050!important;
+  border-top: none!important;
+  border-bottom: none!important;
+  background-image: none!important;
+  color: #FFF!important;
+  margin: 20px 35px 20px 20px!important;
+}
+#errorExplanation h2{
+  padding: 13px 13px 0 20px!important;
+  font-size: 120%!important;
+  background-image: none!important;
+  height:auto!important;
+}
+#errorExplanation p{
+  padding: 0px 13px 4px 20px!important;
+  margin: 0!important;
+}
+#errorExplanation ul{
+  background-color: #FF9F9F;
+  color: inherit;
+  padding:20px;
+  margin: 0;
+}
+#alert,
+div.error {
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: #FFC8DB;
+  color: inherit;
+}
+div.fieldWithErrors {
+  display: inline;
+}
+div.fieldWithErrors input,
+div.fieldWithErrors textarea{
+  background-color: #FFC8DB;
+  color: inherit;
+  display: inline;
+}
+#nav {color: #aaa; font-size: 85%;}
+#sbm{float: right;margin-right: 10px;}
+#nav p {margin-left: 10px;}

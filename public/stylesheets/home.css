@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@import "initialize.css";
+@import "common.css";
+@import "header.css";
+@import "footer.css";
+@import "main.css";
+@import "sub.css";
+
+#nav{
+  margin: 0;
+  background-color: #231825;
+}
+#flash_wrapper{
+  margin-bottom: 40px;
+}
+#photo_count{
+  background:url(/images/tab_count.png) 0 0;
+  width: 181px;
+  height: 26px;
+  position: absolute;
+  top: 370px;
+  right: -16px!important;
+  right: 78px;
+  color: #FFF;
+}
+#photo_count div{
+  color: #FFF;
+  margin: 7px 0 0 20px;
+}
+#home_top,
+#home_middle{
+  width: 866px;
+}
+#home_top{
+  height: 23px;
+  background:url(/images/home_bg_top.png) 0 0;
+}
+#home_middle{
+  background:url(/images/home_bg.png) 0 0 repeat-y;
+}
+#home_topics {
+  margin: 15px 10px 10px 25px;
+  width: 369px;
+  float: left;
+  background-color: #FFF;
+  height: 375px;
+  position: relative;
+}
+#home_topics h3{
+  background:url(/images/ttl_topics.png) 0 0;
+  width: 369px;
+  height: 43px;
+}
+#home_topics ul{
+  margin: 20px;
+}
+#home_topics li{
+  background:url(/images/arrow.png) 0 2px no-repeat;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+#topics_more a{
+  background:url(/images/btn_more.png) 0 2px no-repeat;
+  display: block;
+  width: 59px;
+  height: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+#home_links{
+  margin: 15px 40px 10px 0;
+  width: 390px;
+  float: right;
+  background-color: #FFF;
+  border: 3px solid #DDD;
+  background:url(/images/dot_line.png) #FFF 0 260px no-repeat;
+}
+#home_links li{
+  margin: 20px;
+  clear: both;
+}
+#home_links ul a:visited,
+#home_links ul a:link{
+  color: #333;
+  text-decoration: none;
+}
+#home_links ul a:hover{
+  text-decoration: underline!important;
+}
+#howto_text{float:left; height: 100px; width: 250px;margin-left: 20px;}
+#howto_text h3 a{
+  background:url(/images/ttl_guide.png) 0 0 no-repeat;
+  width: 250px;
+  height: 20px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  display: block;
+}
+#demo_text{float:left; height: 100px; width: 250px;margin-left: 20px;}
+#demo_text h3 a{
+  background:url(/images/ttl_demo.png) 0 0 no-repeat;
+  width: 250px;
+  height: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  display: block;
+}
+#howto_img{
+  background:url(/images/howto_02.png) -10px -10px;
+  width: 74px;
+  height: 74px;
+  float: left;
+  border: 2px solid #CCC;
+}
+#demo_img{
+  margin-top: 5px;
+  background:url(/images/howto_05.png) -10px -10px;
+  width: 74px;
+  height: 74px;
+  float :left;
+  border: 2px solid #CCC;
+}
+
+#what{
+  border-bottom: 2px solid #ccc;
+}
+#home_qr img{
+  float: left
+}
+#home_qr p{
+  float: left;
+  width: 260px;
+}

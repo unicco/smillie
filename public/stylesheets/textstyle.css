@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* box */
+#content-top{
+  background:url(/images/bg_top.jpg) 0 0 no-repeat;
+  height: 30px;
+  line-height: 0;
+}
+#content-bottom{
+  background:url(/images/bg_bottom.jpg) 0 0 no-repeat;
+  height: 30px;
+  line-height: 0;
+}
+#content-middle{
+  background:url(/images/bg_middle.png) 0 0 repeat-y;
+}
+#content{
+  margin: 0 0 0 13px;
+}
+
+/* 見出し */
+h2{
+  background:url(/images/ttl.png) 0 0 no-repeat;
+  margin: 0;
+  height: 53px;
+}
+h2 span{color: #FFF;padding: 25px 0 5px 75px;display:block;}
+h3{
+  background:url(/images/list_header.png) 0 0 no-repeat;
+  padding: 5px 0 10px 40px;
+  margin: 40px 0 0 50px;
+}
+

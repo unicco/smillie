@@ -1,0 +1,78 @@
+<% @title = "Smillie! のご紹介" %>
+<div class="what">
+<h3>Smillie! って？</h3>
+<ul id="what">
+  <li>
+  <div class="what_01"></div>
+  <div>みんなが携帯電話で撮った写真を…</div>
+  </li>
+  <li>
+  <div class="what_02"></div>
+  <div>携帯メールに添付して送信！</div>
+  </li>
+  <li>
+  <div class="what_03"></div>
+  <div>すぐにスライドショーにして再生します。</div>
+  </li>
+</ul><div class="clear"></div>
+<h3>Smillie! の使い方</h3>
+<h4><span>事前準備</span></h4>
+<ul class="howto">
+  <li>
+    <div class="howto_01 img"></div>
+    <div class="text">まず、スライドショーを登録しましょう。
+    <small>入力は 4 項目だけ。</small>
+    <small><%= link_to "[スライドショー登録画面を開く]", :controller=>"parties", :action=>"new" %></small>
+    </div><div class="clear"></div>
+  </li>
+  <li>
+    <div class="howto_02 img"></div>
+    <div class="text">
+    登録が完了すると、写真投稿用のメールアドレスが発行されます。これをイベントの配布資料に書いておきましょう。
+    <small>同時に QR コードも発行されますので、ご活用ください。</small>
+    </div><div class="clear"></div>
+  </li>
+</ul>
+<h4><span>イベント当日</span></h4>
+<ul class="howto">
+  <li>
+    <div class="howto_03 img"></div>
+    <div class="text">
+    プロジェクタまたはパソコンをご用意ください。
+    <small>会場にインターネット環境があることをご確認ください。</small>
+    </div><div class="clear"></div>
+  </li>
+  <li>
+    <div class="howto_04 img"></div>
+    <div class="text">
+    参加者に Smillie! のメールアドレス宛に写真を送ってもらいましょう。
+    <small>複数枚を同時に送ることも可能です。</small>
+    </div><div class="clear"></div>
+  </li>
+  <li>
+    <div class="howto_05 img"></div>
+    <div class="text">
+    すぐにスライドショーの画面に写真が表示されます。
+    <small>携帯からも写真を確認できます。</small>
+    </div><div class="clear"></div>
+  </li>
+  <li>
+    <div class="howto_06 img"></div>
+    <div class="text">
+    削除したい写真があったら、携帯またはパソコンから削除できます。
+    <small>上下左右が間違って上がった写真を、回転して修正することも可能です。</small>
+    </div><div class="clear"></div>
+  </li>
+</ul>
+<h4><span>イベント終了後</span></h4>
+<ul class="howto">
+  <li>
+    <div class="howto_07 img"></div>
+    <div class="text">
+    パソコンから写真を一括してダウンロードできます。
+    <small>写真はイベント終了後1週間で削除するので、忘れずに保存してください。</small>
+    </div><div class="clear"></div>
+  </li>
+</ul>
+<div class="submit signup"><%= link_to "<span>無料のスライドショーを今すぐ使う</span>", :controller=>"parties", :action=>"new" %></div>
+</div>

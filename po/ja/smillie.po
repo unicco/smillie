@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: smillie 1.0.0\n"
+"POT-Creation-Date: 2008-04-20 12:54+0900\n"
+"PO-Revision-Date: 2008-04-03 22:27+0900\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: app/models/inquiry.rb:-
+#, fuzzy
+msgid "inquiry"
+msgstr "お名前"
+
+#: app/models/inquiry.rb:-
+msgid "Inquiry|Name"
+msgstr "お名前"
+
+#: app/models/inquiry.rb:-
+msgid "Inquiry|Email"
+msgstr "メールアドレス"
+
+#: app/models/inquiry.rb:-
+msgid "Inquiry|Body"
+msgstr "お問い合わせ内容"
+
+#: app/models/inquiry.rb:-
+#, fuzzy
+msgid "Inquiry|Created at"
+msgstr "お名前"
+
+#: app/models/inquiry.rb:-
+#, fuzzy
+msgid "Inquiry|Updated at"
+msgstr "お名前"
+
+#: app/models/party.rb:-
+msgid "party"
+msgstr "スライドショー"
+
+#: app/models/party.rb:-
+msgid "Party|Title"
+msgstr "名前"
+
+#: app/models/party.rb:-
+msgid "Party|Mail"
+msgstr "メールアドレス"
+
+#: app/models/party.rb:-
+msgid "Party|Key"
+msgstr "ID"
+
+#: app/models/party.rb:-
+msgid "Party|Held on"
+msgstr "利用日"
+
+#: app/models/party.rb:-
+msgid "Party|Created at"
+msgstr ""
+
+#: app/models/party.rb:-
+msgid "Party|Updated at"
+msgstr ""
+
+#: app/models/photo.rb:-
+msgid "photo"
+msgstr "写真"
+
+#: app/models/photo.rb:-
+msgid "Photo|Party"
+msgstr ""
+
+#: app/models/photo.rb:-
+msgid "Photo|File no"
+msgstr ""
+
+#: app/models/photo.rb:-
+msgid "Photo|Posted by"
+msgstr ""
+
+#: app/models/photo.rb:-
+msgid "Photo|Created at"
+msgstr ""
+
+#: app/models/photo.rb:-
+msgid "Photo|Updated at"
+msgstr ""

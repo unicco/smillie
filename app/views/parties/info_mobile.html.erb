@@ -1,0 +1,12 @@
+<% @title ="#{@party.title}の管理画面" %>
+イベント日は <%=h @party.held_on %>、あと<%=h (@party.held_on + 7 - Date.today) %>日で写真やスライドショーなどすべて削除されます。<br />
+このページをブックマークしてください<br />
+<div style="text-align:center;background-color:#007D08;">
+<span style="font-size:medium;color:#FFFFFF">&#xE689;</span><span style="color:#FFFFFF">写真を投稿するには？</span><span style="font-size:medium;color:#FFFFFF">&#xE689;</span></div>
+<%=h @party.mail_addr %>に写真を添付してメールしてください。複数枚も同時に送れます。<br />
+&#xE6D3;<a href="mailto:?body=<%=h @party.mail_addr %>">投稿ｱﾄﾞﾚｽを友達に教える</a><br />
+<div style="text-align:center;background-color:#007D08;">
+<span style="font-size:medium;color:#FFFFFF">&#xE689;</span><span style="color:#FFFFFF">MENU</span><span style="font-size:medium;color:#FFFFFF">&#xE689;</span></div>
+&#xE681;<%= link_to "写真の一覧", :controller=>"photos", :party_key => @party.key %><br />
+&#xE6D3;<%= link_to "写真をﾒｰﾙ送信", "mailto:#{@party.mail_addr}" %><br />
+&#xE6F0;<%= link_to "写真を一括ﾀﾞｳﾝﾛｰﾄﾞ", "mailto:?body=このメールをパソコンのメールに転送し、パソコンから取得してください。\n#{url_for(:controller => "photos", :party_key => @party.key, :action => "zip", :only_path => false)}" %><br />

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+#sub{
+  float: right;
+  margin-top: 11px;
+}
+#sub a:visited,
+#sub a:link,
+#sub a:hover{
+  color: #666;
+}
+#sub #signup a{
+  background:url(/images/smillie_jpg.jpg) -577px -1px no-repeat;
+  width: 200px;
+  height: 104px;
+  display: block;
+}
+#sub #signup a span{
+  display: none;
+}
+#sub #signup a:hover{
+   background-position:-577px -102px!important;
+}
+#sub_content_1,
+#sub_content_2{
+  margin-top: 15px;
+}
+#sub_content_1 h3{
+  background:url(/images/smillie_png.png) -560px -183px no-repeat;
+  width: 200px;
+  height: 35px;
+}
+#sub_content_2 h3{
+  background:url(/images/smillie_png.png) -560px -228px no-repeat;
+  width: 200px;
+  height: 35px;
+}

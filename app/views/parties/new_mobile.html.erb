@@ -1,0 +1,22 @@
+<% @title = "共有アルバムの作成" %>
+<% form_for :party, @party, :url => {:action => "create"} do |f| %>
+登録項目は 4 つだけ。すぐにご利用いただけます！<br />
+<%= error_messages_for :party %>
+<img src="/images/line.gif" /><br />
+1)イベント日<br />
+<%= f.date_select :held_on, :use_month_numbers => true %><br />
+<small>※本日から 7 日以内を指定してください。<br />
+※指定した日を過ぎて 7 日後に写真は削除されます。</small><br />
+<img src="/images/line.gif" /><br />
+2)登録者のﾒｰﾙｱﾄﾞﾚｽ<br />
+<%= f.text_field :mail %><br />
+<img src="/images/line.gif" /><br />
+3)共有アルバムの名前<br />
+<%= f.text_field :title %><br />
+<small>※タイトルに使います。</small><br />
+<img src="/images/line.gif" /><br />
+4)共有アルバム ID (半角英数字)<br />
+<%= f.text_field :key %><br />
+<small>※「xxx」と入力すると、スライドショーの表示 URL は http://smillie.jp/xxx に、投稿用メールアドレスは xxx@smillie.jp になります。</small><br />
+<%= submit_tag("登録する") %>
+<% end %>

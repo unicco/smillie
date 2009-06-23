@@ -1,0 +1,14 @@
+<% @title = "#{@party.title}" %>
+<%=h flash[:info] %>
+<% @photos.each do |photo| %>
+<%= tag :img, :src => photo.thumbnail_location %><br />
+<%=h photo.created_at.strftime("%m/%d %H:%M") %><br />
+<%= link_to "[編集]", edit_photo_path(:id => photo.id, :party_key => params[:party_key]) %>
+<%= link_to "[削除]", confirm_destroy_photo_path(:id => photo.id, :party_key => params[:party_key]) %>
+<hr color="#888888" />
+<% end %>
+<%= will_paginate @photos, :prev_label=>'&lt;', :next_label=>'&gt;' %><br />
+<hr color="#888888" />
+&#xE681;<%= link_to "この画面を更新", :controller=>"photos", :party_key => @party.key %><br />
+&#xE6D3;<%= link_to "写真をﾒｰﾙ送信", "mailto:#{@party.mail_addr}" %><br />
+&#xE6F0;&#xE6F0;<%= link_to "写真を一括ﾀﾞｳﾝﾛｰﾄﾞ", "mailto:?body=このメールをパソコンのメールに転送し、パソコンから取得してください。\n#{url_for(:controller => "photos", :party_key => @party.key, :action => "zip", :only_path => false)}" %><br />

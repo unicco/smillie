@@ -1,0 +1,24 @@
+<div style="text-align:center">
+Smillie!は携帯電話からアップした写真をその場でスライドショーにするサービスです。ご利用は無料。パソコン・携帯どちらからでも使えます。
+</div>
+<div style="text-align:center">
+<font color="#ff0099">┏━━━初めての方━━━┓</font><br /><font color="#ff0099">┃</font>&nbsp;&#xE690;&nbsp;<%= link_to "Smillie!って?", :action=>"about" %>
+&nbsp;&#xE690;&nbsp;<font color="#ff0099">┃</font><br /><font color="#ff0099">┗━━━━━━━━━━━┛</font>
+</div>
+<img src="/images/line.gif" /><br />
+<div style="text-align:center">
+&#xE6F0;<%= link_to "今すぐ使ってみる", :action=>"new", :controller=>"parties" %>
+&#xE6D3;<a href="mailto:?body=http://smillie.jp/">友達に教える</a><br />
+</div>
+<img src="/images/line.gif" /><br />
+
+<div style="text-align:center;background-color:#007D08;">
+<span style="font-size:medium;color:#FFFFFF">&#xE689;</span><span style="color:#FFFFFF">MENU</span><span style="font-size:medium;color:#FFFFFF">&#xE689;</span></div>
+&#xE748;<%= link_to "Smillie!の使い方", :controller=>"home", :action=>"about" %><br />
+┗Smillie!を活用しよう!<br />
+&#xE6F0;<%= link_to "利用登録", :controller=>"parties", :action=>"new" %><br />
+┗使いたくなったら、ここから登録!<br />
+&#xE6CF;<%= link_to "お問い合わせ", :controller=>"inquiries", :action=>"new" %><br />
+┗分からないことはこちらへ<br />
+&#xE6DD;<%= link_to "運営団体", :controller=>"home", :action=>"about" %><br />
+┗Smillie!の運営団体の紹介です<br />

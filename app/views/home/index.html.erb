@@ -1,0 +1,49 @@
+<% content_for 'head' do %>
+<%= stylesheet_link_tag "home", :media => "all" %>
+<%= javascript_include_tag 'swfobject' %>
+<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAK7_mW5_s1M7pIXgC0GtSyhR6FSGKn55CRTE3YyYrqKehqRFBZBSpWF98X9AtUAdgKqL0s048xVVziQ"></script>
+<script type = "text/javascript">
+swfobject.embedSWF("/a.swf", "flash", "850", "350", "9.0.0");
+</script>
+<%= javascript_include_tag 'googlefeed' %>
+<% end %>
+<div id="flash_wrapper">
+<div id="flash"><p>flash player 9 をインストールください。</p></div>
+<!-- flash end -->
+</div><!-- flash_wrapper end -->
+<div id="photo_count"><div><%=h @count %></div></div>
+<div id="home_top"></div><div id="home_middle"><div style="font-size:0">&nbsp;</div>
+  <div id="home_topics">
+  <h3><span>TOPICS</span></h3>
+  <div id="home_qr">
+  <img src="/images/QR_Code.jpg" /><p><h4>携帯からも Smillie! は使えます！</h4><br />携帯から http://smillie.jp/ にアクセスしてみてください。</p>
+  </div>
+  <div class="clear"></div>
+  <ul id="feed">
+  </ul>
+  <div id="topics_more"><a href="http://blog.smillie.jp/"><span>more</span></a></div>
+  </div>
+  <div id="home_links">
+  <div id="what"><div style="margin: 20px;">Smillie! (スマイリー！) は、携帯電話からアップした写真をその場ですぐスライドショーにして、みんなで楽しめるオンライン共有アルバムサービスです。結婚式や同窓会、カンファレンスなどの各種イベントにお使いいただけます。ご登録・ご利用はすべて無料。ぜひお楽しみください！
+<br /><br />
+<%= link_to "詳しい説明を見る", :action=>"about" %> | <%= link_to "ご利用者の声", :action=>"casestudy" %> | <%= link_to "デモを見る", :controller=>"parties", :action=>"show", :party_key => "demo" %> | <%= link_to "今すぐ登録する", :controller=>"parties", :action=>"new" %><br />
+</div></div>
+
+    <ul>
+      <li id="howto_list">
+        <div id="howto_img"></div>
+        <div id="howto_text">
+          <h3><%= link_to "<span>使い方ガイド</span>", :action=>"about" %></h3>
+          <%= link_to "Smillie! の使い方をご説明します。", :action=>"about" %>
+        </div>
+      </li>
+      <li id="demo_list">
+        <div id="demo_img"></div>
+        <div id="demo_text">
+        <h3><a href="http://smillie.jp/demo" target="_blank"><span>スライドショーのデモ</span></a></h3>
+        <a href="http://smillie.jp/demo" target="_blank">実際にお使いいただけるスライドショーのデモは、こちらからご覧いただけます。</a>
+        </div>
+      </li>
+    </ul><div class="clear"></div>
+  </div><div class="clear"></div>
+</div><div id="home_boddom"></div>

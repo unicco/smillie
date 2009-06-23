@@ -1,0 +1,43 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family: "Osaka", "‚l‚r ‚oƒSƒVƒbƒN", sans-serif;
+  font-size:80%;
+  color:#444;
+  background-color: #231825;
+}
+img {
+  margin:0;
+  padding:0;
+  vertical-align:bottom;
+  border:none;
+}
+
+h1,h2,h3,h4,h5 {
+  margin:0;
+  padding:0;
+}
+a:link,
+a:visited {
+  color:#006E00;
+  text-decoration:underline;
+}
+a:hover {
+  text-decoration:none!important;
+}
+ul,li {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+p {
+  margin: 5px 0;
+  padding:0;
+  line-height:1.8;
+}
+a span{
+    display:none;
+}

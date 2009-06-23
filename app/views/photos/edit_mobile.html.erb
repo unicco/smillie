@@ -1,0 +1,12 @@
+<% @title = "#{@party.title}" %>
+<% form_tag({:id => @photo.id, :action => "update"}, :method => :put) do %>
+<%= tag :img, :src => edit_thumbnail_photo_path(:id => @photo.id, :rotate => @rotate) %><br />
+<%= link_to "[元のサイズで画像を表示]", @photo.location %><br />
+<%= link_to "[左に回転]", edit_photo_path(:id => @photo.id, :rotate => @left_rotate) %>
+<%= link_to "[右に回転]", edit_photo_path(:id => @photo.id, :rotate => @right_rotate) %>
+<%= hidden_field_tag "rotate", @rotate %><br />
+※確定するを押すと保存します。<br />
+<%= submit_tag "確定する" %><br />
+<% end %>
+<hr color="#888888" />
+- <%= link_to "一覧に戻る", photos_path %>

@@ -1,0 +1,12 @@
+<% @title="お問い合わせ" %>
+以下の項目にご入力のうえ、送信してください。追って担当者よりご連絡させていただきます。<br />
+<%= error_messages_for :inquiry %>
+<% form_for(@inquiry) do |f| %>
+■ お名前<br />
+<%= f.text_field :name %><br />
+■ メールアドレス<br />
+<%= f.text_field :email %><br />
+■ お問い合わせ内容<br />
+<%= f.text_field :body %><br />
+<%= submit_tag("登録する") %>
+<% end %>

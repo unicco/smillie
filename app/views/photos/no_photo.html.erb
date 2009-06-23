@@ -1,0 +1,4 @@
+<% @title = "#{@party.title}" %>
+<div class="alert"><p>まだ写真がアップロードされていません。</p><p>&nbsp;</p></div>
+
+<div class="submit"><%= link_to "管理ページに戻る", :controller=>"parties", :action=>"info", :party_key => @party.key %></div>

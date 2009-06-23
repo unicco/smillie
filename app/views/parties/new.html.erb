@@ -1,0 +1,29 @@
+<% @title = "スライドショー作成の準備" %>
+<% @description = "登録項目は 4 つだけ。すぐにご利用いただけます！" %>
+<% form_for :party, @party, :url => {:action => "create"} do |f| %>
+  <%= error_messages_for :party %>
+  <h3>Smillie を使う日を指定してください</h3>
+  <div class="input">
+  <%= f.date_select :held_on, :use_month_numbers => true %>
+  <p>本日から 7 日以内を指定してください。</p>
+  <p>指定した日を過ぎて 7 日後に写真は削除されます。保存する場合は、一括ダウンロード機能をご利用ください。</p>
+  </div>
+  <h3>メールアドレス</h3>
+  <div class="input">
+  <%= f.text_field :mail %>
+  <p>ご登録者のメールアドレスをご記入ください。Smillie! の利用・改善に必要な範囲以外で使用することはありません。</p>
+  </div>
+  <h3>スライドショーの名前</h3>
+  <div class="input">
+  <%= f.text_field :title %>
+  <p>携帯で表示する際のタイトルに使います。</p>
+  </div>
+  <h3>スライドショーの ID (半角英数字)</h3>
+  <div class="input">
+  <%= f.text_field :key %>
+  <p>「xxx」と入力すると、スライドショーの表示 URL は http://smillie.jp/xxx に、投稿用メールアドレスは xxx@smillie.jp になります。</p>
+  </div>
+  <div class="submit">
+  <%= image_submit_tag("regist.png", { :name => "commit", :value => "登録する" } ) %>
+  </div>
+<% end %>

@@ -1,0 +1,21 @@
+<% @title = "#{@party.title}" %>
+<% if @photos.empty? %>
+<div class="alert"><p>まだ写真がアップロードされていません。</p><p>&nbsp;</p></div>
+<% else %>
+  <div id="phtos">
+    <% if flash[:info] %><div class="flash_info"><%=h flash[:info] %></div><% end %>
+    <% @photos.each do |photo| %>
+      <div class="list_photo">
+      <div><%= tag :img, :src => photo.thumbnail_location %></div>
+        <div style="text-align:center;background-color:#DADADA;">
+          <%=h photo.created_at.strftime("%m/%d %H:%M") %>
+          <%= link_to "編集", edit_photo_path(:id => photo.id, :party_key => params[:party_key]) %>
+          <%= link_to "削除", confirm_destroy_photo_path(:id => photo.id, :party_key => params[:party_key]) %>
+        </div>
+      </div>
+    <% end %>
+    <div class="clear"></div>
+  </div>
+  <%= will_paginate @photos, :prev_label=>'&lt;', :next_label=>'&gt;' %>
+<% end %>
+<div class="submit"><%= link_to "管理ページに戻る", :controller=>"parties", :action=>"info", :party_key => @party.key %></div>

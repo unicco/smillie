@@ -1,0 +1,9 @@
+<% @title = "#{@party.title}" %>
+この写真を削除しますか？
+<hr color="#888888" />
+<%= tag :img, :src => @photo.thumbnail_location %>
+<% form_tag photo_path(:id => @photo.id), :method => "delete" do  %>
+<%= submit_tag "削除する" %>
+<% end %>
+<hr color="#888888" />
+- <%= link_to "一覧に戻る", photos_path %>

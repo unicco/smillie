@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Description" content="Smillie! は無料で使える、携帯電話からアップした写真をすぐスライドショーにしてみんなで楽しめる、オンライン共有アルバムサービスです。" />
+<meta name="Keywords" content="携帯電話, スライドショー, 共有アルバム, 写真, 無料" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<% unless params[:controller] == "home" && params[:action] == "index" %>
+<%= stylesheet_link_tag "default", :media => "all" %>
+<% end %>
+<%= @content_for_head %>
+<title><%=h @title && "#{@title} - " %>Smillie! (スマイリー!) : 携帯写真スライドショーサービス</title>
+</head>
+<body>
+<% if params[:controller] == "home" && params[:action] == "index" %>
+<div id="nav">
+<div id="sbm">ブックマークに追加 
+<!--hatena--><a href="javascript:window.location='http://b.hatena.ne.jp/add?mode=confirm&title='+escape(document.title)+'&url='+escape(location.href)"><img src="http://b.hatena.ne.jp/images/append.gif" width="16" height="12" alt="はてなブックマークに追加" /></a>
+<!--Yahoo--><a href="javascript:void window.open('http://bookmarks.yahoo.co.jp/bookmarklet/showpopup?t='+encodeURIComponent(document.title)+'&u='+encodeURIComponent(location.href)+'&ei=UTF-8','_blank','width=550,height=480,left=100,top=50,scrollbars=1,resizable=1',0);"><img src="http://i.yimg.jp/images/sicons/ybm16.gif" width="16" height="16" alt="Yahoo!ブックマークに登録" /></a>
+<!--uzzurl--><a href="javascript:window.location='http://news.ecnavi.jp/config/add/confirm?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);"><img src="http://buzzurl.jp/static/image/api/icon/add_icon_mini_08.gif" width="16" height="16" alt="Buzzurlに追加" /></a>
+<!--livedoor--><a href="javascript:location.href='http://clip.livedoor.com/redirect?link='+encodeURIComponent(window.location.href)+'&title='+encodeURIComponent(document.title)"><img src="http://parts.blog.livedoor.jp/img/cmn/clip_16_16_b.gif" width="16" height="16" alt="livedoorクリップに追加" /></a>
+<!--delicious--><a href="javascript:window.location='http://del.icio.us/post?url='+escape(location.href)+'&title='+escape(document.title);"><img src="http://del.icio.us/static/img/delicious.small.gif" width="16" height="16" alt="del.icio.usに追加" /></a>
+<!--google--><a href="javascript:location.href='http://www.google.com/bookmarks/mark?op=edit&bkmk='+encodeURIComponent(window.location.href)+'&title='+encodeURIComponent(document.title)"><img src="http://www.google.co.jp/favicon.ico" width="16" height="16" alt="Google Bookmarksに追加" /></a>
+</div>
+<p>Smillie! HOME</p></div>
+<div class="clear"></div>
+<% end %>
+<div id="wrapper">
+  <% unless params[:controller] == "home" && params[:action] == "index" %>
+  <div id="header_wrapper">
+  <div id="header">
+  <div id="logo"><h1><%= link_to "<span>smillie!：携帯電話からアップした写真をすぐスライドショーにするサービス/realtime photo slideshow service</span>", :controller=>"home" %></h1></div><!-- logo end -->
+  <ul id="global_menu">
+  <li id="global_home"><%= link_to "<span>home</span>", :controller=>"home" %></li>
+  <li id="global_howto"><%= link_to "<span>使い方</span>", :controller=>"home", :action=>"about" %></li>
+  <li id="global_casestudy"><%= link_to "<span>利用者の声</span>", :controller=>"home", :action=>"casestudy" %></li>
+  <li id="global_demo"><%= link_to "<span>デモ</span>", {:controller=>"parties", :action=>"show", :party_key=>"demo"}, {:target=>"_blank"} %></li>
+  <li id="global_signup"><%= link_to "<span>スライドショー新規作成</span>", :controller=>"parties", :action=>"new" %></li>
+  </ul>
+  <div class="clear"></div>
+  </div><!-- header end -->
+  </div><!-- header_wrapper end -->
+  <div class="clear"></div>
+  <% end %>
+  <div id="contents_wrapper">
+    <div id="contents"><div style="font-size:0">&nbsp;</div>
+    <% unless params[:controller] == "home" && params[:action] == "index" %>
+      <div id="both"><div id="content-top"></div><div id="content-middle"><div style="font-size:0;">&nbsp;</div><div id="content">
+      <h2><span><%=h @title %></span></h2>
+      <div class="description"><%=h @description %></div>
+    <% end %>
+      <%= yield %><% unless params[:controller] == "home" && params[:action] == "index" %>
+    <div class="clear"></div></div>&nbsp;</div><div id="content-bottom"></div></div>
+    <% end %></div></div><div class="clear" style="font-size:0;">&nbsp;</div><div id="footer_wrapper"><div id="footer">
+    <div id="copyright">Copyright &copy; <%=h  Time.now.year %> tinymonks All rights reserved.</div>
+    <ul>
+      <li><a href="http://blog.smillie.jp/">お知らせ</a></li>
+      <li><a href="http://tinymonks.org/" target="_blank">運営団体</a></li>
+      <li><%= link_to "ソースをダウンロード", :controller=>"home", :action=>"download" %></li>
+      <li><%= link_to "寄付について", :controller=>"home", :action=>"donation" %></li>
+      <li><%= link_to "お問い合わせ", :controller=>"inquiries", :action=>"new" %></li>
+    </ul>
+  </div><div class="clear">&nbsp;</div>
+  </div>
+</div>
+<!-- google analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4079316-2");
+pageTracker._setDomainName("smillie.jp");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<!-- /google analytics -->
+</body>
+</html>

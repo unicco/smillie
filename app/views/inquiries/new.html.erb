@@ -1,0 +1,20 @@
+<% @title = "お問い合わせ" %>
+<% @description = "以下の項目にご入力のうえ、送信してください。追って担当者よりご連絡させていただきます。" %>
+<%= error_messages_for :inquiry %>
+<% form_for(@inquiry) do |f| %>
+    <h3>お名前</h3>
+    <div class="input">
+    <%= f.text_field :name %>
+    </div>
+    <h3>メールアドレス</h3>
+    <div class="input">
+    <%= f.text_field :email %>
+    </div>
+    <h3>お問い合わせ内容</h3>
+    <div class="input">
+    <%= f.text_area :body %>
+    </div>
+    <div class="submit">
+    <%= image_submit_tag("regist.png", { :name => "commit", :value => "登録する" } ) %>
+    </div>
+<% end %>

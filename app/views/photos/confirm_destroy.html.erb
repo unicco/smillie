@@ -1,0 +1,15 @@
+<% @title = "#{@party.title}" %>
+<p class="body">この写真を削除しますか？</p>
+<div class="list_photo">
+  <div>
+    <%= tag :img, :src => @photo.thumbnail_location %>
+  </div>
+  <% form_tag photo_path(:id => @photo.id), :method => "delete" do  %>
+  <div>
+    <%= submit_tag "削除" %>
+  </div>
+  <% end %>
+</div>
+<div class="back">
+<%= link_to "写真アルバムの一覧に戻る",  photos_path %>
+</div>

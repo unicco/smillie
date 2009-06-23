@@ -1,0 +1,27 @@
+<% @title = "#{@party.title}管理画面" %>
+    <div class="alert"><p>
+    イベント日は <%=h @party.held_on %>、あと<%=h (@party.held_on + 7 - Date.today) %>日で<br />
+    写真やスライドショーなどすべて削除されます。</p></div>
+    <ul id="btn">
+      <li id="btn_slide"><%= link_to "<span>スライドショーを見る</span>", :action=>"show", :party_key => @party.key %></li>
+      <li id="btn_list"><%= link_to "<span>写真の一覧を見る</span>", :controller=>"photos", :party_key => @party.key %></li>
+      <li id="btn_zip"><%= link_to "<span>写真を一括ダウンロードする</span>", :controller=>"photos", :action=>"zip", :party_key => @party.key %></li>
+    </ul><div class="clear"></div>
+    <h3 id="ttl_upload"><span>写真をアップロードするには？</span></h3>
+    <div class="text">
+    <p><%=h @party.mail_addr %> に写真を添付してメールしてください。<br />
+    複数枚も同時に送れます。</p>
+    <p>右にある QR コードもご活用ください。メールの送り先と、携帯からの画像確認できる URL が読み取れます。</p>
+    </div>
+    <div class="qr"><%= tag(:img, :src => @party.qrcode_path) %></div>
+    <h3 id="ttl_tell"><span>みんなに教えよう！</span></h3>
+    <dl class="url">
+      <dt>メール投稿先</dt>
+      <dd><%=h @party.mail_addr %></dd>
+      <dt>スライドショーの URL</dt>
+      <dd>http://smillie.jp/<%=h @party.key %></dd>
+      <dt>このページの URL</dt>
+      <dd>http://smillie.jp/<%=h @party.key %>/info</dd>
+      <dt>写真ダウンロード URL</dt>
+      <dd>http://smillie.jp/<%=h @party.key %>/zip</dd>
+    </dl>
